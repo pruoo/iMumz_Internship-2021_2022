@@ -1,0 +1,11 @@
+1. Do  you follow any coding patterns/conventions?
+A)
+
+2. What is your understanding of the term “State Management” when talking about Flutter App Development. How have you managed “state” before?
+A)
+
+3. When/Where do you usually encounter bugs in your development process? What’s your approach/outlook when you have to squash a bug?
+A)
+
+4. Have you written dart/javascript tests before? If yes, tell us more.
+A)
