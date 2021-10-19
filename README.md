@@ -21,3 +21,4 @@ Use `answers.txt`
 What would your widget tree look like, for the screenshot in "design" folder? 
 Give a high-level(low-fidelity) description/breakdown of the basic widgets that you would use to compose different elements of the screen.
 Create a high-fidelity component, you can choose any logical group from the screen.
+(Except lib folder, add all the remaining folders/files of your example app to the gitignore file.)
