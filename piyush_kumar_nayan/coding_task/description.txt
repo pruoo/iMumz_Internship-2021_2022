@@ -1,0 +1,2 @@
+Here the entire page can be considered as a single scrollable column which has span of text at the top followed
+by an image. After this it again has text with different shape size and color which is then followed by a row of sharing content i.e whatsapp and other.

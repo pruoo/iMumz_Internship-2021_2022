@@ -1,0 +1,17 @@
+1. Do  you follow any coding patterns/conventions?
+A) whenever building from scratch i prefer to build skeleton of ui first at one place and test all my business logics from another end. when  everything works as expected
+   then i continue building the remaining UI things. After this i try refactor my code and other  multiple optimisation techniques to reduce load on main thread so that the
+   app experience stays smooth and responsive.
+   
+
+2. What is your understanding of the term “State Management” when talking about Flutter App Development. How have you managed “state” before?
+A) when the current values of our object changes either due to human interaction or any other means, the way we rebuild our UI to convey the same to our user speaks about state Management.when we have data flowing between multiple screens,
+   i prefer to use provider as my state management architecture  because it enables us to have ui component completely separated from business logic thus data changes at various places are easily notified and updated on multiple screens.
+
+3. When/Where do you usually encounter bugs in your development process? What’s your approach/outlook when you have to squash a bug?
+A) I usually encounter bugs wheneveri i use any new widget in my tree without looking at its detailed documentation i.e is it platform specific or it requires any modification in gradle. But the same documentation, stack overflow youtube
+   tutorials and medium articles  makes it easier to crack.
+
+
+4. Have you written dart/javascript tests before? If yes, tell us more.
+A) Yes. i have written ci/cd pipeline for my apps using codemagic.io.  Codemagic makes it easy to automate the building , testing and everything all at one place by running it on both simulators

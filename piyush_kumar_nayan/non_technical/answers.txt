@@ -1,0 +1,8 @@
+1. How do you stay updated about topics in Flutter/Dart and active in the community? (Discord/Slack/MeetUps/Twitter)
+A) i get notified from various communities on linkedin. Apart from this medium articles and youtube recommendation keeps me updated about new topics in flutter.
+
+2. Your most used IDE/keyboard shortcuts when coding. (for Flutter/Dart/Typescript)
+A) I prefer to use VS code for building app  because it is light and doesnt run into lag like android studio.My most used shortcut is stfl or stf for creating stateful and stateless widget. 
+
+3. How do you approach responsiveness when writing code for an entire screen? 
+A) I prefer to use Mediaquery to get height,width and orientation of device.I also use flexible, expanded and layout    builder widget to get responsiveness in our code.
