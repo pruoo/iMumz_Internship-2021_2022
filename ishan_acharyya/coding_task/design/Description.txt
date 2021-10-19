@@ -1,0 +1,38 @@
+There is a button in the app bar for navigation.
+The screen in question is scrollable in the vertical direction so a column and list view are used.
+The children are primarily containers to contain text and allow for styling the borders and colors.
+I have made use of the following widgets:
+	- Scaffold
+	- Container
+	- Row
+	- Column
+	- Text, RichText
+	- RawMaterialButton
+	- Icon
+	- GestureDetector
+	- ListView
+	- Image
+	- Divider
+	- SizedBox
+	- DottedBorder
+	- InkWell
+	
+The widget tree would look like:
+Scaffold
+	Column
+		ListView
+			//For Text
+			Container
+				Text/RichText
+			
+			//For Image
+			Image
+			
+			//For Some component with a particular arrangement of texts
+			Container			
+				Row/Column
+					Text/Icon
+				Repeat
+			
+				
+Added padding wherever necessary
