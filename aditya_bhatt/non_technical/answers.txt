@@ -2,7 +2,7 @@
 A) I stay updated about topics in flutter by following multiple flutter related channels on youtube and I also like to follow multiple forums about Flutter to stay updated. 
 
 2. Your most used IDE/keyboard shortcuts when coding. (for Flutter/Dart/Typescript)
-A) I use vs code to work in flutter and in vs code writing "stl" gives a drop-down menu to create a stateless or stateful widget. And I like to use shift+alt+f to format the code. Also if I want to learn new shortcuts I press ctrl+k+s to see the list of shortcuts.
+A) I use vs code to work in flutter and in vs code writing "stl" gives a drop-down menu to create a stateless or stateful widget and ctrl+'.' to convet stateless widget to stateful. And I like to use shift+alt+f to format the code. Also if I want to learn new shortcuts I press ctrl+k+s to see the list of shortcuts.
 
 3. How do you approach responsiveness when writing code for an entire screen? 
 A) It usually depends on the type of screen the app user would have. If I have to make an app for small screens I would use bigger buttons and fonts and for large screens appropriate sized buttons and fonts.
