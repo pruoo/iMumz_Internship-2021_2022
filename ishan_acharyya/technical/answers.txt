@@ -1,0 +1,21 @@
+1. Do  you follow any coding patterns/conventions?
+A)	- lowerCamelCase
+	- Use of indentation
+	- decent documentation
+	- Modularity(for increased reusability)
+	- 
+
+2. What is your understanding of the term “State Management” when talking about Flutter App Development. How have you managed “state” before?
+A)	State Management is the act of managing the state(primarily data and configuration) of the several components of the Flutter app. 	
+So far I have used only setState(), Streams and passing around relevant data to manage states but intend to learn providers for more robust develpment.
+
+3. When/Where do you usually encounter bugs in your development process? What’s your approach/outlook when you have to squash a bug?
+A) I primarily encounter bugs while integrating some technology in my application.
+   I deubg my application in the following manner:-
+	- Zero in on the origin of the bug. If origin is not obvious from looking at the bug, remove some functionalitites and then try to find it.
+	- Understand the cause and try to resolve it. Here google helps a lot.
+	- Add back funcitonality incrementally and check if the bug persists or has led to more bugs.
+
+4. Have you written dart/javascript tests before? If yes, tell us more.
+A) I haven't written tests for dart/javascript before, but have used jUnit for testing
+   Java applications and written tests for python.

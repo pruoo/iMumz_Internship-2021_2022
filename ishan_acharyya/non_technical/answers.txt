@@ -1,0 +1,19 @@
+1. How do you stay updated about topics in Flutter/Dart and active in the community? (Discord/Slack/MeetUps/Twitter)
+A) My primary source of information would be Flutters Youtube channel and a few tech channels that  
+   cover related technologies.
+   I also visit Flutter.dev and get a glimpse of some interesting things that are highlighted.
+   There are a growing number of Flutter developers in my institute, so I gain some info
+   while conversing with them.
+
+2. Your most used IDE/keyboard shortcuts when coding. (for Flutter/Dart/Typescript)
+A) I use mostly Android Studio for Flutter development
+   My most used shortcut might be Ctrl+S & Ctral+Shift+\ for hot reload & hot restart while developing for Flutter
+
+3. How do you approach responsiveness when writing code for an entire screen? 
+A) While building responsive app, I keep the following points in mind:-
+	- Avoid hard coded values
+	- Maximize the use of Flexible Widget
+        - Using classes such as Layout Builder helps
+	- Though I haven't used it yet, the use of Mediaquery to understand
+	  the constraints and building according to it might be useful
+
