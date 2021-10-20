@@ -1,3 +1,4 @@
+First I added and imported share_plus dependency in my page and services.dart package.
 For creating this page first I made a scrollable column that contains all the widgets of the page.
 For the back button on top, I created a row and created a button inside it.
 Then I placed all the images and text inside the column.
