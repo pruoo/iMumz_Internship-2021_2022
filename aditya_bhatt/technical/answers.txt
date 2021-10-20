@@ -1,0 +1,13 @@
+1. Do  you follow any coding patterns/conventions?
+A) I like to use indentations to format the code to make it much more readable. I also like to use different files or folders for different screens
+
+2. What is your understanding of the term “State Management” when talking about Flutter App Development. How have you managed “state” before?
+A) There are two types of states in Flutter: stateless and stateful.  
+   Stateless widgets are static and cannot change their state during the runtime of the app. Some examples of Stateless widgets are icons, images, text, etc.
+   Stateful widgets are dynamic and can change their state multiple times. Users can interact with the stateful widgets. Some examples of Stateful widgets are checkbox, textbox, radio buttons, etc.
+
+3. When/Where do you usually encounter bugs in your development process? What’s your approach/outlook when you have to squash a bug?
+A) As I am still learning flutter I encounter lots of run-time and compile-time errors whenever I try to work on something new. The first thing I always do is check the logs which tell us more about the error and see if I can fix it myself. Then if it seems like something that I can't fix I copy the error from the log and search it in Google. If I still can't find the solution I usually ask someone I know who can fix it or I ask it online in forums like StackOverflow.
+
+4. Have you written dart/javascript tests before? If yes, tell us more.
+A) I haven't written tests for dart or javascript before but I can definitely learn more about it.

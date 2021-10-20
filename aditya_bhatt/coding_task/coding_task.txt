@@ -1,0 +1,5 @@
+For creating this page first I made a scrollable column that contains all the widgets of the page.
+For the back button on top, I created a row and created a button inside it.
+Then I placed all the images and text inside the column.
+Then for the referral code section, I made a container that contains the code text and copy icon and used InkWell to copy the text on the clipboard and show SnackBar message that the code is copied.
+For the share buttons I made a row and made two containers and using InkWell and share_plus dependency I added the share function. For the WhatsApp icon, I used font_awesome_flutter dependency.
