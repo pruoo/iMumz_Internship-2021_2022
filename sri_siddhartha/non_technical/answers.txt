@@ -1,0 +1,15 @@
+1. How do you stay updated about topics in Flutter/Dart and active in the community? (Discord/Slack/MeetUps/Twitter)
+A) I follow a lot of forums and pages on instagram, servers on discord and communicate with people interested in app development especially flutter.
+	I also follow the official handles of flutter and google for updates and version changes to keep up with the changes 
+	, official documentation for flutter as its a great place to learn more, youtube and online tech events.
+	I am also a member in my college google developers student club App Dev department (GDSC-VITC)
+
+2. Your most used IDE/keyboard shortcuts when coding. (for Flutter/Dart/Typescript)
+A) I personally prefer using visual studio code as its easy and has a lot of features that help in development. 
+	My most used short cut is cntrl+s which saves the file and also hot reloads the application.
+
+3. How do you approach responsiveness when writing code for an entire screen? 
+A)  When the UI/UX component enables interaction using mediaquery of the Screen context or layoutbuilder or dimensions inherited using Keys helps
+	to enable potrait and landscape mode. Mediaquery is a genral solution for height and width of the component as we can manipulate the ratio
+	and make it more responsive and also viable for different sizes of phones. Certain widgets might not require responsive or dynamic dimensions
+	which can be made static valued by trial and error

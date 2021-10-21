@@ -1,0 +1,29 @@
+1. Do  you follow any coding patterns/conventions?
+A) 	Indendation
+	Reusable Code
+	Refactoring
+
+2. What is your understanding of the term “State Management” when talking about Flutter App Development. How have you managed “state” before?
+
+A) The User Interface is a function of your data(state) ie data which affects the UI and might change over time. There are 2 states
+	App Wide State:
+		Affects the entire app or significant parts of it
+	Local State:
+		Affects only a widget on its own does not affect other widgets
+	State Management is the implementation of a Design Pattern, with which we can synchronize 
+	the state of the application throughout all components of the application.
+	This design pattern helps the implementation of services and handling of data coming from the database.
+	
+	I Have Used the provider package for managing state and made different types of data providers structure 
+	which notifies all the listeners connected
+
+3. When/Where do you usually encounter bugs in your development process? What’s your approach/outlook when you have to squash a bug?
+A)	Usually i encounter bugs when implementing any new packages or api
+	When i encounter a bug:
+		I first read the error to completely understand the issue
+		Begin backtracking to other dependencies and related code to try and figure out where the code is breaking
+		Google the error statement without the unnecessary statements to find open questions or solutions posted online
+		Approach the code from the top and use print statements(checkpoints) at each crucial component to check logical errors
+
+4. Have you written dart/javascript tests before? If yes, tell us more.
+A) No I have not written dart/javascript tests before but i have done unit testing in go lang for an backend API made with go lang.
