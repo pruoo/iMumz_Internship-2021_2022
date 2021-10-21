@@ -1,0 +1,4 @@
+The app consists of 3 added functionalities
+    The Copy to clipboard function and a snackbar to display the same using flutter services
+    Share to whatsapp using flutter_share_me launch flutter with the code copied as a message
+    Other Share options to choose from using wc_flutter_share package
