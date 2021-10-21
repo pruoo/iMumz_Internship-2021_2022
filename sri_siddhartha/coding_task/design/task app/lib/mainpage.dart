@@ -1,9 +1,12 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/rendering.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:wc_flutter_share/wc_flutter_share.dart';
+import 'package:flutter_share_me/flutter_share_me.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({Key? key}) : super(key: key);
@@ -104,22 +107,31 @@ class _MainPageState extends State<MainPage> {
                 child: DottedBorder(
                   child: Container(
                     height: 45,
-                    child: ListTile(
-                      contentPadding: const EdgeInsets.only(
-                          left: 10, right: 10, bottom: 10),
-                      leading: const Text(
-                        'IMUMZ1T3RN',
-                        style: TextStyle(fontWeight: FontWeight.bold),
-                      ),
-                      trailing: IconButton(
-                          onPressed: () {
-                            //copy to clipboard
-                          },
-                          icon: const Icon(
-                            Icons.copy,
+                    child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 10),
+                            child: const Text(
+                              'IMUMZ1T3RN',
+                              style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                          IconButton(
+                            onPressed: () {
+                              Clipboard.setData(
+                                  const ClipboardData(text: "IMUMZ1T3RN"));
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                const SnackBar(
+                                  content: Text('Copied to Clipboard'),
+                                  duration: Duration(seconds: 2),
+                                ),
+                              );
+                            },
+                            icon: Icon(FontAwesomeIcons.copy),
                             color: Colors.black,
-                          )),
-                    ),
+                          )
+                        ]),
                   ),
                   borderType: BorderType.RRect,
                   radius: const Radius.circular(30),
@@ -143,27 +155,41 @@ class _MainPageState extends State<MainPage> {
                               color: Color.fromRGBO(37, 211, 102, 1)),
                           height: 45,
                           width: 165,
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceAround,
-                            children: const [
-                              Icon(
-                                FontAwesomeIcons.whatsapp,
-                                color: Colors.white,
-                              ),
-                              Text(
-                                'WHATSAPP',
-                                style: TextStyle(
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 15),
-                              )
-                            ],
+                          child: InkWell(
+                            onTap: () async {
+                              String? response;
+                              final FlutterShareMe flutterShareMe =
+                                  FlutterShareMe();
+                              response = await flutterShareMe.shareToWhatsApp(
+                                  msg: 'IMUMZ1T3RN');
+                              print(response);
+                            },
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              children: const [
+                                Icon(
+                                  FontAwesomeIcons.whatsapp,
+                                  color: Colors.white,
+                                ),
+                                Text(
+                                  'WHATSAPP',
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 15),
+                                )
+                              ],
+                            ),
                           ),
                         ),
                       ),
                       InkWell(
                         onTap: () {
-                          // function goes here
+                          WcFlutterShare.share(
+                              sharePopupTitle: 'Share',
+                              subject: 'Referral Code',
+                              text: 'IMUMZ1T3RN',
+                              mimeType: 'text/plain');
                         },
                         child: Container(
                           padding: EdgeInsets.all(10),
