@@ -1,11 +1,11 @@
 1. Do  you follow any coding patterns/conventions?
-A)
+A) Yes I always divide the screen into smaller widgets, and place them in different files, I always make widgets folder and services folder for every screen.
 
 2. What is your understanding of the term “State Management” when talking about Flutter App Development. How have you managed “state” before?
-A)
+A) State Management means changing state whenever data is changed. Yes I have managed state before using simple setState, Providers and GetX.
 
 3. When/Where do you usually encounter bugs in your development process? What’s your approach/outlook when you have to squash a bug?
-A)
+A) I usually encounter bugs in State Management, when to call setState and what to do in InitState and dispose. I usually solve these bugs by using print statement or debug mode of Flutter
 
 4. Have you written dart/javascript tests before? If yes, tell us more.
-A)
+A) No i have not.
