@@ -1,4 +1,6 @@
+import 'package:coding_task/colorConstants.dart';
 import 'package:flutter/material.dart';
+import 'package:dotted_border/dotted_border.dart';
 
 void main() {
   runApp(const MyApp());
@@ -7,109 +9,376 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'iMumz',
       theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      debugShowCheckedModeBanner: false,
+      home: const Home(),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key, required this.title}) : super(key: key);
-
-  // This widget is the home page of your application. It is stateful, meaning
-  // that it has a State object (defined below) that contains fields that affect
-  // how it looks.
-
-  // This class is the configuration for the state. It holds the values (in this
-  // case the title) provided by the parent (in this case the App widget) and
-  // used by the build method of the State. Fields in a Widget subclass are
-  // always marked "final".
-
-  final String title;
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      // This call to setState tells the Flutter framework that something has
-      // changed in this State, which causes it to rerun the build method below
-      // so that the display can reflect the updated values. If we changed
-      // _counter without calling setState(), then the build method would not be
-      // called again, and so nothing would appear to happen.
-      _counter++;
-    });
-  }
+class Home extends StatelessWidget {
+  const Home({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    // This method is rerun every time setState is called, for instance as done
-    // by the _incrementCounter method above.
-    //
-    // The Flutter framework has been optimized to make rerunning build methods
-    // fast, so that you can just rebuild anything that needs updating rather
-    // than having to individually change instances of widgets.
     return Scaffold(
-      appBar: AppBar(
-        // Here we take the value from the MyHomePage object that was created by
-        // the App.build method, and use it to set our appbar title.
-        title: Text(widget.title),
-      ),
-      body: Center(
-        // Center is a layout widget. It takes a single child and positions it
-        // in the middle of the parent.
-        child: Column(
-          // Column is also a layout widget. It takes a list of children and
-          // arranges them vertically. By default, it sizes itself to fit its
-          // children horizontally, and tries to be as tall as its parent.
-          //
-          // Invoke "debug painting" (press "p" in the console, choose the
-          // "Toggle Debug Paint" action from the Flutter Inspector in Android
-          // Studio, or the "Toggle Debug Paint" command in Visual Studio Code)
-          // to see the wireframe for each widget.
-          //
-          // Column has various properties to control how it sizes itself and
-          // how it positions its children. Here we use mainAxisAlignment to
-          // center the children vertically; the main axis here is the vertical
-          // axis because Columns are vertical (the cross axis would be
-          // horizontal).
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                SizedBox(
+                  width: 40,
+                  child: Card(
+                      elevation: 2,
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(60)),
+                      color: ColorConstants.lightGreen,
+                      child: const Icon(
+                        Icons.arrow_back,
+                        size: 24,
+                      )),
+                ),
+                Card(
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(15)),
+                  color: ColorConstants.lightGreen,
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const Text(
+                          "Pending request from Divya !",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        const Text(
+                          "Divya has sent you ₹200/- off discount on your",
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                        Row(
+                          children: const [
+                            Text(
+                              "Baby Care Program plus plan ",
+                              style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                            Text(
+                              "AVAIL IT NOW!",
+                              style: TextStyle(color: Colors.orange),
+                            )
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                Image.asset(
+                  'assets/illustration.png',
+                  fit: BoxFit.fitWidth,
+                ),
+                const SizedBox(
+                  height: 4,
+                ),
+                const Text(
+                  "Together we can create happy, heathy and intelligent babies",
+                  style: TextStyle(fontSize: 36),
+                  maxLines: 3,
+                ),
+                const SizedBox(
+                  height: 8,
+                ),
+                const Text(
+                  "#SPREADTHELOVE",
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+                const SizedBox(
+                  height: 8,
+                ),
+                const Text(
+                    "Gift your pregnant buddy ₹200/- off on iMumz Baby Care Program + and get small token of ₹200/- paytm cashback. REFER NOW!"),
+                const SizedBox(
+                  height: 16,
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(left: 2, right: 2),
+                  child: DottedBorder(
+                    color: Colors.black,
+                    borderType: BorderType.RRect,
+                    radius: const Radius.circular(15),
+                    strokeWidth: 1,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Row(
+                        children: const [
+                          Text(
+                            "IMUMZ1NT3RN",
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                          Spacer(),
+                          Icon(Icons.copy),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+                const SizedBox(
+                  height: 16,
+                ),
+                Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+                  Card(
+                    color: ColorConstants.darkGreen,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15)),
+                    child: SizedBox(
+                      width: MediaQuery.of(context).size.width / 3,
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Row(
+                          children: const [
+                            SizedBox(
+                              width: 8,
+                            ),
+                            Icon(Icons.message, color: Colors.white),
+                            SizedBox(
+                              width: 12,
+                            ),
+                            Text(
+                              "WHATSAPP",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                  Card(
+                    color: ColorConstants.blue,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15)),
+                    child: SizedBox(
+                      width: MediaQuery.of(context).size.width / 3,
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Row(
+                          children: const [
+                            SizedBox(
+                              width: 12,
+                            ),
+                            Icon(
+                              Icons.share,
+                              color: Colors.white,
+                            ),
+                            SizedBox(
+                              width: 16,
+                            ),
+                            Text(
+                              "OTHER",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                ]),
+                const SizedBox(
+                  height: 8,
+                ),
+                const Text("some text", style: TextStyle(color: Colors.grey)),
+                const SizedBox(
+                  height: 8,
+                ),
+                const SizedBox(
+                  width: double.infinity,
+                  height: 36,
+                  child: ColoredBox(
+                    color: ColorConstants.lightGreen,
+                    child: Center(child: Text("How refferal works?")),
+                  ),
+                ),
+                const SizedBox(
+                  height: 8,
+                ),
+                const BulletPoint(
+                  no: 1,
+                  text: "Invite your buddies to iMumz",
+                ),
+                const BulletPoint(
+                    no: 2,
+                    text:
+                        "They will recieve ₹200/- paytm cashback on purchase of Baby Care Program+ plan"),
+                Row(
+                  children: [
+                    const DecoratedBox(
+                        decoration: BoxDecoration(
+                            color: ColorConstants.blue, shape: BoxShape.circle),
+                        child: Padding(
+                          padding: EdgeInsets.all(8.0),
+                          child: Text('3'),
+                        )),
+                    const SizedBox(
+                      width: 12,
+                    ),
+                    Expanded(
+                      child: RichText(
+                        text: const TextSpan(
+                            text: 'you get an ',
+                            style: TextStyle(color: Colors.black),
+                            children: <TextSpan>[
+                              TextSpan(
+                                text: 'instant paytm cashback of ₹200/-',
+                                style: TextStyle(
+                                  color: ColorConstants.blue,
+                                ),
+                              ),
+                            ]),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 12),
+                const Divider(),
+                Card(
+                  color: ColorConstants.lightGreen,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(5)),
+                  child: Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const Text(
+                          "My Referrals",
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                        const SizedBox(
+                          height: 12,
+                        ),
+                        Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: const [
+                                  Text(
+                                    '2',
+                                    style: TextStyle(fontSize: 24),
+                                  ),
+                                  Text(
+                                    'SIGNED UP',
+                                    style: TextStyle(color: Colors.grey),
+                                  )
+                                ],
+                              ),
+                              const SizedBox(
+                                width: 8,
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: const [
+                                  Text(
+                                    '2',
+                                    style: TextStyle(fontSize: 24),
+                                  ),
+                                  Text(
+                                    'SUBSCRIBED',
+                                    style: TextStyle(color: Colors.grey),
+                                  )
+                                ],
+                              ),
+                              const Spacer(),
+                              DecoratedBox(
+                                decoration: BoxDecoration(
+                                  border: Border.all(),
+                                  borderRadius: BorderRadius.circular(15),
+                                ),
+                                child: const Padding(
+                                  padding: EdgeInsets.all(8.0),
+                                  child: Text('View Details'),
+                                ),
+                              ),
+                              const SizedBox(
+                                height: 12,
+                              ),
+                            ])
+                      ],
+                    ),
+                  ),
+                ),
+                const SizedBox(
+                  width: 2,
+                ),
+                const Divider(),
+                const SizedBox(
+                  width: 2,
+                ),
+                Row(
+                  children: const [
+                    Text('Terms & Conditions',
+                        style: TextStyle(fontWeight: FontWeight.bold)),
+                    Spacer(),
+                    Icon(Icons.arrow_forward_ios)
+                  ],
+                ),
+                const SizedBox(
+                  width: 2,
+                ),
+                const Divider(),
+                const SizedBox(
+                  width: 2,
+                ),
+                Row(
+                  children: const [
+                    Text('FAQs', style: TextStyle(fontWeight: FontWeight.bold)),
+                    Spacer(),
+                    Icon(Icons.arrow_forward_ios)
+                  ],
+                ),
+              ],
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
-            ),
-          ],
+          ),
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+    );
+  }
+}
+
+class BulletPoint extends StatelessWidget {
+  const BulletPoint({
+    Key? key,
+    required this.no,
+    required this.text,
+  }) : super(key: key);
+
+  final int no;
+  final String text;
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        DecoratedBox(
+            decoration: const BoxDecoration(
+                color: ColorConstants.blue, shape: BoxShape.circle),
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(no.toString()),
+            )),
+        const SizedBox(
+          width: 12,
+        ),
+        Expanded(child: Text(text))
+      ],
     );
   }
 }
