@@ -203,7 +203,13 @@ class Home extends StatelessWidget {
                   height: 36,
                   child: ColoredBox(
                     color: ColorConstants.lightGreen,
-                    child: Center(child: Text("How refferal works?")),
+                    child: Align(
+                        alignment: Alignment.centerLeft,
+                        child: Padding(
+                          padding: EdgeInsets.all(8.0),
+                          child: Text("How referal works?",
+                              style: TextStyle(fontWeight: FontWeight.bold)),
+                        )),
                   ),
                 ),
                 const SizedBox(
