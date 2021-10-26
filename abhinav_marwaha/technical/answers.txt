@@ -1,6 +1,6 @@
 1. Do  you follow any coding patterns/conventions?
 
-A) DRY, self-explainatry variable names, modular architecture, general OOPS I guess. ( though I never understood SOLID fully)
+A) clean and beautiful code, DRY, self-explainatry variable names, modular architecture, general OOPS I guess. ( though I never understood SOLID fully)
 
 2. What is your understanding of the term “State Management” when talking about Flutter App Development. How have you managed “state” before?
 
@@ -16,6 +16,8 @@ so I prefer Provider.
 A) I break down every feature into small tasks and build those tasks 
    and see if it runs fine, then fix those bugs, 
    I like to squash a bug as soon as its created. (reduce tech debt)
+   I usually search stackoverflow if I haven't encountered some error before.
+   I use logging whenever debugging.
 
 4. Have you written dart/javascript tests before? If yes, tell us more.
 
