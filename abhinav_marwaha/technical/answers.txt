@@ -5,7 +5,7 @@ A) clean and beautiful code, DRY, self-explainatry variable names, modular archi
 2. What is your understanding of the term “State Management” when talking about Flutter App Development. How have you managed “state” before?
 
 A) To my understanding, state is everything that there is in the memory of the OS of a flutter app when its running (on what page you are, variables, call stack etc.)
-Mostly when we talk about state we are taklking about local state (variables in stateful widgets).
+Mostly when we talk about state we are talking about local state (variables in stateful widgets).
 So in state management, we see when these states change and when we have to rebuild widgets.
 I handle state with provider package its basically an abstraction layer above inhereted widget (flutter's
 way to pass down variables in the widget tree). Though I have played with BLoC, i think its more complicated and needs a little bit more boiler plate
@@ -14,10 +14,10 @@ so I prefer Provider.
 3. When/Where do you usually encounter bugs in your development process? What’s your approach/outlook when you have to squash a bug?
 
 A) I break down every feature into small tasks and build those tasks 
-   and see if it runs fine, then fix those bugs, 
-   I like to squash a bug as soon as its created. (reduce tech debt)
-   I usually search stackoverflow if I haven't encountered some error before.
-   I use logging whenever debugging.
+and see if it runs fine.If there are some bugs, I fix them. 
+I like to squash a bug as soon as its created. (reduce tech debt)
+I usually do a google search if I haven't encountered some error before and most probably refer github issues and stackoverflow.
+I use logging whenever needed to debug.
 
 4. Have you written dart/javascript tests before? If yes, tell us more.
 
