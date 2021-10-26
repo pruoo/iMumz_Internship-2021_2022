@@ -4,7 +4,7 @@ A) clean and beautiful code, DRY, self-explainatry variable names, modular archi
 
 2. What is your understanding of the term “State Management” when talking about Flutter App Development. How have you managed “state” before?
 
-A) To my understanding, state is everything that there is in the memory of the OS of a flutter app when its running (on what page you are, variables, call stack etc.)
+A) To my understanding, state is everything that there is, in the memory of the OS, of a flutter app when its running (on what page you are, variables, call stack etc.)
 Mostly when we talk about state we are talking about local state (variables in stateful widgets).
 So in state management, we see when these states change and when we have to rebuild widgets.
 I handle state with provider package its basically an abstraction layer above inhereted widget (flutter's
