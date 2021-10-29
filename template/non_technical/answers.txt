@@ -1,8 +1,8 @@
 1. How do you stay updated about topics in Flutter/Dart and active in the community? (Discord/Slack/MeetUps/Twitter)
-A) 
+A) From different flutter communities and youtube channels.
 
 2. Your most used IDE/keyboard shortcuts when coding. (for Flutter/Dart/Typescript)
-A) 
+A) I use vs code a lot.
 
 3. How do you approach responsiveness when writing code for an entire screen? 
-A) 
+A) By making it more modular for easy understanding.
