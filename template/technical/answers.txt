@@ -1,11 +1,11 @@
 1. Do  you follow any coding patterns/conventions?
-A)
+A) I recently started learning bloc patterns but I'm not very good at it.
 
 2. What is your understanding of the term “State Management” when talking about Flutter App Development. How have you managed “state” before?
-A)
+A) i think sharing states in screen of application, in the begining i have used setstate alot but now i'm learing Bloc. 
 
 3. When/Where do you usually encounter bugs in your development process? What’s your approach/outlook when you have to squash a bug?
-A)
+A) Most of the errors in flutter development are render errors that cause overflows so while development I take care while giving size to a component.
 
 4. Have you written dart/javascript tests before? If yes, tell us more.
-A)
+A) No, i haven't.
